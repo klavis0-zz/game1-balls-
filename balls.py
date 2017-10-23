@@ -20,5 +20,10 @@ def new_ball():
     root.after(1000, new_ball)
 
 
+def click(event):
+    print('click')
+
+
 new_ball()
+canv.bind('<Button-1>', click)
 mainloop()
